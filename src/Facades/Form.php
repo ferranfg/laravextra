@@ -1,8 +1,8 @@
 <?php
 
-namespace Ferranfg\Laravextra\Form;
+namespace Ferranfg\Laravextra\Facades;
 
-use Illuminate\Form\FormFacade;
+use Illuminate\Html\FormFacade;
 
 class Form extends FormFacade
 {

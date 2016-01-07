@@ -1,6 +1,6 @@
 <?php
 
-namespace Ferranfg\Laravextra\Form;
+namespace Ferranfg\Laravextra\Facades;
 
 use Illuminate\Html\HtmlFacade;
 

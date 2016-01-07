@@ -3,6 +3,8 @@
 namespace Ferranfg\Laravextra;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Html\FormBuilder;
+use Illuminate\Html\HtmlBuilder;
 
 class LaravextraServiceProvider extends ServiceProvider
 {
