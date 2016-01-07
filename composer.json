@@ -12,10 +12,5 @@
             "Ferranfg\\Laravextra\\": "src/"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    },
     "minimum-stability": "dev"
 }
