@@ -2,8 +2,8 @@
 
 namespace Ferranfg\Laravextra\Models;
 
-use Form;
-use Input;
+use Illuminate\Html\FormFacade as Form;
+use Ferranfg\Laravextra\Facades\Input;
 
 trait BaseModel
 {

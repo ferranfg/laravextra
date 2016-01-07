@@ -2,6 +2,8 @@
 
 namespace Ferranfg\Laravextra\Facades;
 
+use Illuminate\Support\Facades\Facade;
+
 /**
  * @see \Illuminate\Http\Request
  */

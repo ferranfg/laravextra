@@ -4,7 +4,9 @@
         "name": "Ferran Figueredo",
         "email": "ferranfg@gmail.com"
     }],
-    "require": {},
+    "require": {
+        "illuminate/html": "5.0.0"
+    },
     "autoload": {
         "psr-4": {
             "Ferranfg\\Laravextra\\": "src/"
