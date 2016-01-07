@@ -1,0 +1,19 @@
+{
+    "name": "ferran/laravextra",
+    "authors": [{
+        "name": "Ferran Figueredo",
+        "email": "ferranfg@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ferranfg\\Laravextra\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    },
+    "minimum-stability": "dev"
+}
