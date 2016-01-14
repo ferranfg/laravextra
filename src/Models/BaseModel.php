@@ -16,6 +16,11 @@ trait BaseModel
 		return Form::$type($name, Input::old($name, $this->$prop), $extra);
 	}
 
+	public function currency($prop, $name = null)
+	{
+		return '<div class="input-group">'.$this->input($prop, $name).'<span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span></div>';
+	}
+
 	public function datetime($prop, $name = null)
 	{
 		return $this->input($prop, $name, 'text', ['class' => 'form-control datetime']);
@@ -23,6 +28,21 @@ trait BaseModel
 
 	public function textarea($prop, $name = null)
 	{
-		return $this->input($prop, $name, 'textarea', ['class' => 'form-control', 'rows' => 4]);
+		return $this->input($prop, $name, 'textarea', ['class' => 'form-control', 'rows' => 8]);
 	}
+
+	public function select($name, $options = [])
+	{
+		$options = empty($options) ? [1 => 'Active', '' => 'Disable'] : $options;
+
+		return Form::select($name, $options, $this->$name, ['class' => 'form-control']);
+	}
+
+	public function getStatusIcon()
+	{
+		if ($this->active) return '<span class="glyphicon glyphicon-ok" data-toggle="tooltip" title="Active"></span>';
+
+		return '<span class="glyphicon glyphicon-remove" data-toggle="tooltip" title="Disabled"></span>';
+	}
+
 }
