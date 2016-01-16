@@ -31,7 +31,7 @@ trait BaseModel
 		return $this->input($prop, $name, 'textarea', ['class' => 'form-control', 'rows' => 8]);
 	}
 
-	public function select($name, $options = [])
+	public function options($name, $options = [])
 	{
 		$options = empty($options) ? [1 => 'Active', '' => 'Disable'] : $options;
 
