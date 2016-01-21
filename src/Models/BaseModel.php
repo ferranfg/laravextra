@@ -26,6 +26,11 @@ trait BaseModel
 		return $this->input($prop, $name, 'text', ['class' => 'form-control datetime']);
 	}
 
+	public function time($prop, $name = null)
+	{
+		return $this->input($prop, $name, 'text', ['class' => 'form-control time']);
+	}
+
 	public function textarea($prop, $name = null)
 	{
 		return $this->input($prop, $name, 'textarea', ['class' => 'form-control', 'rows' => 8]);
