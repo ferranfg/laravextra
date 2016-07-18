@@ -19,7 +19,7 @@ trait AdminBaseController
 
 		foreach ($fields as $field => $value)
 		{
-			$object->$field = $value;
+			$object->$field = empty($value) ? null : $value;
 		}
 
 		$object->updated_at = Carbon::now();
