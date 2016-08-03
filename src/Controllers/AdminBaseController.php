@@ -17,7 +17,7 @@ trait AdminBaseController
 		$fields = Input::except($this->notSave);
 		$object = $model::newInstance();
 
-		if (method_exists($object, 'withTrashed') and Input::has('id'))
+		if (method_exists($object, 'trashed') and Input::has('id'))
 		{
 			$object = $model::withTrashed()->find(Input::get('id'));
 		}
