@@ -15,7 +15,16 @@ trait AdminBaseController
 	protected function save($model, $url, $callback = null)
 	{
 		$fields = Input::except($this->notSave);
-		$object = Input::has('id') ? $model::find(Input::get('id')) : $model::newInstance();
+		$object = $model::newInstance();
+
+		if (method_exists($object, 'withTrashed') and Input::has('id'))
+		{
+			$object = $model::withTrashed()->find(Input::get('id'));
+		}
+		elseif (Input::has('id'))
+		{
+			$object = $model::find(Input::get('id'));
+		}
 
 		foreach ($fields as $field => $value)
 		{
