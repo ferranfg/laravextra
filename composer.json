@@ -1,5 +1,6 @@
 {
     "name": "ferranfg/laravextra",
+    "version": "1.0.0",
     "authors": [{
         "name": "Ferran Figueredo",
         "email": "ferranfg@gmail.com"
@@ -12,5 +13,5 @@
             "Ferranfg\\Laravextra\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
